@@ -1,0 +1,39 @@
+[√] Flutter (Channel stable, 3.38.5, on Microsoft Windows [Version 10.0.26100.7171], locale en-IN) [326ms]
+    • Flutter version 3.38.5 on channel stable at C:\src\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision f6ff1529fd (7 weeks ago), 2025-12-11 11:50:07 -0500
+    • Engine revision 1527ae0ec5
+    • Dart version 3.10.4
+    • DevTools version 2.51.1
+    • Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-native-assets, omit-legacy-version-file, enable-lldb-debugging
+
+[√] Windows Version (11 Home Single Language 64-bit, 24H2, 2009) [1,432ms]
+
+[√] Android toolchain - develop for Android devices (Android SDK version 36.0.0) [2.6s]
+    • Android SDK at C:\Users\HP\AppData\Local\Android\sdk
+    • Emulator version 35.6.11.0 (build_id 13610412) (CL:N/A)
+    • Platform android-36, build-tools 36.0.0
+    • Java binary at: D:\Android studio\jbr\bin\java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment (build 21.0.6+-13391695-b895.109)
+    • All Android licenses accepted.
+
+[√] Chrome - develop for the web [15ms]
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[X] Visual Studio - develop Windows apps [13ms]
+    X Visual Studio not installed; this is necessary to develop Windows apps.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its default components
+
+[√] Connected device (3 available) [447ms]
+    • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.26100.7171]
+    • Chrome (web)      • chrome  • web-javascript • Google Chrome 143.0.7499.170
+    • Edge (web)        • edge    • web-javascript • Microsoft Edge 144.0.3719.92
+    ! Device emulator-5554 is offline.
+
+[√] Network resources [835ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 1 category.

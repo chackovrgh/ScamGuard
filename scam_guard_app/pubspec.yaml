@@ -1,0 +1,31 @@
+name: scam_guard_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  record: ^5.1.0          # We use version 5
+  path_provider: ^2.1.2
+  permission_handler: ^11.3.0
+  cupertino_icons: ^1.0.6
+  image_picker: ^1.0.7
+  file_picker: ^8.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# FORCE THE FIX HERE
+dependency_overrides:
+  record_linux: ^1.2.1    # Force newer Linux version (fixes the missing method error)
+  record_platform_interface: ^1.4.0
+
+flutter:
+  uses-material-design: true
