@@ -28,7 +28,7 @@ except Exception as e:
 # If brain.py failed to configure, we might need a fallback or just let it fail gracefully later
 if not model:
      # ⚠️ REPLACE WITH YOUR ACTUAL API KEY
-    API_KEY = "AIzaSyBGr3Gerj4axr6vZLkBKCjo6xSFYMXM74c" 
+    API_KEY = "api key"
     genai.configure(api_key=API_KEY)
     # Try a safer default if brain fails
     try:
