@@ -123,6 +123,14 @@ The primary endpoint for threat analysis. Accepts `multipart/form-data`.
 
 ---
 
+## 📱 Screenshots
+
+| Ready State | Scam Detected |
+|:-----------:|:-------------:|
+| ![ScamGuard ready screen](screenshot1.png) | ![ScamGuard scam detection result](screenshot2.png) |
+
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
