@@ -54,3 +54,51 @@ ScamGuard operates on a hybrid deployment pipeline balancing latency and computa
 ```bash
 git clone [https://github.com/yourusername/ScamGuard.git](https://github.com/yourusername/ScamGuard.git)
 cd ScamGuard/backend
+
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+(Required packages: flask, google-generativeai, librosa, scikit-learn, SpeechRecognition, Pillow, numpy)
+
+### 3. Environment Variables
+Create a .env file in the root directory and add your Gemini API Key securely:
+
+Ini, TOML
+GEMINI_API_KEY=your_api_key_here
+4. Run the Flask Server
+Bash
+python app.py
+The server will start on http://0.0.0.0:5000 and display your local network IP for mobile emulator connection.
+
+📡 API Endpoints
+POST /detect
+The primary endpoint for threat analysis. Accepts multipart/form-data.
+
+Accepted Payloads:
+
+Audio Call: audio (file, e.g., .m4a, .wav)
+
+Screenshot: image (file, e.g., .png, .jpg)
+
+Text Message: text (string)
+
+Sample JSON Response:
+
+JSON
+{
+  "type": "Voice Call",
+  "content_detected": "[English] The caller is threatening to block the HDFC bank account unless immediate action is taken.",
+  "urgency_score": 0.85,
+  "fusion_debug": {
+    "audio_contribution": 34.0,
+    "llm_contribution": 54.0,
+    "weights": "Audio: 0.4, LLM: 0.6",
+    "final_score": 88.0
+  },
+  "gemini_analysis": {
+    "is_scam": true,
+    "risk_score": 90,
+    "reasoning": "The caller is inducing a false sense of urgency and threatening account closure, a classic social engineering tactic."
+  },
+  "final_verdict": "SCAM"
+}
